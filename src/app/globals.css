@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --font-sans: var(--font-rubik);
+}
+
+body {
+  font-family: var(--font-rubik), sans-serif;
+}
