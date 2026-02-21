@@ -9,9 +9,11 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    <main className="min-h-[100svh] bg-white">
-      <div className="w-full bg-white border border-[#bdbdbd] min-h-[100svh] p-[12px] flex flex-col">
-
+    // موبايل: نخليه stretched من غير center
+    // ديسكتوب: يرجع center + الخلفية الرمادي
+    <main className="min-h-[100svh] sm:min-h-screen bg-white sm:bg-[#efefef] sm:flex sm:items-center sm:justify-center">
+      {/* موبايل: نخلي الكونتينر ياخد طول الشاشة بالكامل */}
+      <div className="w-full h-[100svh] sm:h-auto sm:max-w-[1280px] bg-white border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
           href={WHATSAPP_URL}
@@ -19,13 +21,13 @@ export default function Home() {
           rel="noopener noreferrer"
           className="block border border-[#bdbdbd]"
         >
-          <div className="h-[50px] grid grid-cols-[50px_1fr] items-center">
+          <div className="h-[52px] sm:h-[64px] grid grid-cols-[52px_1fr] sm:grid-cols-[64px_1fr] items-center">
             <div className="h-full border-r border-[#bdbdbd] flex items-center justify-center">
-              <div className="w-[14px] h-[14px] border-t-2 border-r-2 border-black rotate-45" />
+              <div className="w-[14px] h-[14px] sm:w-[18px] sm:h-[18px] border-t-2 border-r-2 border-black rotate-45" />
             </div>
 
             <div
-              className="text-center text-[13px] font-bold text-black leading-none"
+              className="text-center text-[14px] sm:text-[20px] font-bold text-black leading-none"
               style={{ letterSpacing: "0.18em" }}
             >
               ORDER VIA WHATSAPP
@@ -34,8 +36,9 @@ export default function Home() {
         </a>
 
         {/* HERO */}
-        <div className="mt-[10px] relative w-full h-[235px] bg-black overflow-hidden">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] rounded-full overflow-hidden">
+        {/* قللنا الارتفاع شوية في الموبايل عشان كل حاجة تدخل */}
+        <div className="mt-[12px] sm:mt-[24px] relative w-full h-[44svh] sm:h-[387px] bg-black overflow-hidden">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[72vw] max-w-[320px] aspect-square rounded-full overflow-hidden">
             <Image
               src="/logos/hero.png"
               alt="Hero"
@@ -47,34 +50,41 @@ export default function Home() {
         </div>
 
         {/* SUBTITLE */}
+        {/* خليتها سطرين زي ما طلبت + تكبير بسيط */}
         <div
-          className="mt-4 text-center text-[19px] font-bold text-black leading-tight"
+          className="mt-4 sm:mt-6 text-center font-bold text-black text-[18px] sm:text-[26px] leading-tight"
           style={{ letterSpacing: "0.02em" }}
         >
-          <span className="block">MERCH, DONE PROPERLY</span>
-          <span className="block">WEBSITE LAUNCHING SOON</span>
+          <div>MERCH, DONE PROPERLY</div>
+          <div>WEBSITE LAUNCHING SOON</div>
         </div>
 
-        {/* LOGO (smaller to prevent cropping) */}
-        <div className="mt-3 flex justify-center">
+        {/* LOGO */}
+        {/* صغرناه أكتر في الموبايل عشان مايتقصش */}
+        <div className="mt-4 sm:mt-8 flex justify-center">
           <Image
             src="/logos/logo.png"
             alt="TOO GOOD FOR MERCH"
             width={2000}
             height={1000}
             priority
-            className="w-[250px] max-w-[90%] h-auto"
+            className="w-[280px] sm:w-[540px] max-w-[95%] h-auto"
           />
         </div>
 
-        {/* FOOTER (smaller + no crop + last element) */}
+        {/* FOOTER */}
+        {/* نخليه يثبت في آخر الشاشة في الموبايل */}
         <div
-          className="mt-3 text-[7px] font-bold text-black text-center whitespace-nowrap"
-          style={{ letterSpacing: "0.01em" }}
+          className="mt-auto pt-3 sm:mt-14 sm:pt-0 flex justify-center sm:justify-between items-center text-[9px] sm:text-[11px] font-bold text-black whitespace-nowrap"
+          style={{ letterSpacing: "0.02em" }}
         >
-          TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
-        </div>
+          <div className="text-center sm:text-left">
+            TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
+          </div>
 
+          {/* الديسكتوب فقط (نفس الشكل القديم) */}
+          <div className="hidden sm:block">@TOOGOODFORMERCH</div>
+        </div>
       </div>
     </main>
   );

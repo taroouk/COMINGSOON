@@ -32,7 +32,8 @@ body {
 body {
   color: var(--foreground);
   font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
-  overflow: hidden; /* يمنع أي فراغ فوق أو تحت في الموبايل */
+  overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 /* تأكيد إن الصفحة تملى الشاشة بالظبط */
