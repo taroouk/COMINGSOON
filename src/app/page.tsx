@@ -9,10 +9,7 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    // موبايل: نخليه stretched من غير center
-    // ديسكتوب: يرجع center + الخلفية الرمادي
     <main className="min-h-[100svh] sm:min-h-screen bg-white sm:bg-[#efefef] sm:flex sm:items-center sm:justify-center">
-      {/* موبايل: نخلي الكونتينر ياخد طول الشاشة بالكامل */}
       <div className="w-full h-[100svh] sm:h-auto sm:max-w-[1280px] bg-white border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
@@ -36,7 +33,6 @@ export default function Home() {
         </a>
 
         {/* HERO */}
-        {/* قللنا الارتفاع شوية في الموبايل عشان كل حاجة تدخل */}
         <div className="mt-[12px] sm:mt-[24px] relative w-full h-[44svh] sm:h-[387px] bg-black overflow-hidden">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[72vw] max-w-[320px] aspect-square rounded-full overflow-hidden">
             <Image
@@ -49,8 +45,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SUBTITLE */}
-        {/* خليتها سطرين زي ما طلبت + تكبير بسيط */}
+        {/* SUBTITLE (two lines) */}
         <div
           className="mt-4 sm:mt-6 text-center font-bold text-black text-[18px] sm:text-[26px] leading-tight"
           style={{ letterSpacing: "0.02em" }}
@@ -60,30 +55,36 @@ export default function Home() {
         </div>
 
         {/* LOGO */}
-        {/* صغرناه أكتر في الموبايل عشان مايتقصش */}
+        {/* ✅ صغرناه أكتر للموبايل + حددنا max-height عشان ما يتقصش */}
         <div className="mt-4 sm:mt-8 flex justify-center">
-          <Image
-            src="/logos/logo.png"
-            alt="TOO GOOD FOR MERCH"
-            width={2000}
-            height={1000}
-            priority
-            className="w-[280px] sm:w-[540px] max-w-[95%] h-auto"
-          />
+          <div className="w-[240px] sm:w-[540px] max-w-[95%]">
+            <Image
+              src="/logos/logo.png"
+              alt="TOO GOOD FOR MERCH"
+              width={2000}
+              height={1000}
+              priority
+              className="w-full h-auto max-h-[180px] sm:max-h-none object-contain"
+            />
+          </div>
         </div>
 
         {/* FOOTER */}
-        {/* نخليه يثبت في آخر الشاشة في الموبايل */}
+        {/* ✅ جوه الصفحة 100% + padding يمين/شمال + خط أصغر + no overflow */}
         <div
-          className="mt-auto pt-3 sm:mt-14 sm:pt-0 flex justify-center sm:justify-between items-center text-[9px] sm:text-[11px] font-bold text-black whitespace-nowrap"
-          style={{ letterSpacing: "0.02em" }}
+          className="mt-auto pt-3 sm:mt-14 sm:pt-0 w-full flex justify-center sm:justify-between items-center font-bold text-black whitespace-nowrap overflow-hidden px-[6px] sm:px-0"
+          style={{ letterSpacing: "0.02em", fontSize: "8px" }}
         >
-          <div className="text-center sm:text-left">
+          {/* موبايل: سطر واحد مضبوط */}
+          <div className="sm:hidden text-center w-full truncate">
             TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
           </div>
 
-          {/* الديسكتوب فقط (نفس الشكل القديم) */}
-          <div className="hidden sm:block">@TOOGOODFORMERCH</div>
+          {/* ديسكتوب: نفس القديم */}
+          <div className="hidden sm:block text-[11px]">
+            TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED
+          </div>
+          <div className="hidden sm:block text-[11px]">@TOOGOODFORMERCH</div>
         </div>
       </div>
     </main>

@@ -33,7 +33,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  overscroll-behavior: none;
 }
 
 /* تأكيد إن الصفحة تملى الشاشة بالظبط */
