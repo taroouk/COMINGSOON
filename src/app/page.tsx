@@ -67,11 +67,20 @@ export default function Home() {
 
         {/* FOOTER */}
         <div
-          className="mt-auto pt-6 sm:pt-14 flex justify-between items-center text-[9px] sm:text-[11px] font-bold text-black whitespace-nowrap"
+          className="mt-[12px] sm:mt-14 text-[10px] sm:text-[11px] font-bold text-black"
           style={{ letterSpacing: "0.02em" }}
         >
-          <div>TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED</div>
-          <div>@TOOGOODFORMERCH</div>
+          {/* Mobile: two lines, left aligned (matches screenshot) */}
+          <div className="flex flex-col items-start gap-[2px] sm:hidden">
+            <div>@TOOGOODFORMERCH</div>
+            <div>TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED</div>
+          </div>
+
+          {/* Desktop: original layout */}
+          <div className="hidden sm:flex justify-between items-center whitespace-nowrap">
+            <div>TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED</div>
+            <div>@TOOGOODFORMERCH</div>
+          </div>
         </div>
       </div>
     </main>
