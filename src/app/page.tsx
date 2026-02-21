@@ -84,12 +84,10 @@ export default function Home() {
           </div>
 
           {/* Desktop: نفس القديم */}
-          <div
-            className="sm:hidden text-center w-full"
-            style={{ fontSize: "20px" }}
-          >
-            TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
+          <div className="hidden sm:block text-[11px]">
+            TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED
           </div>
+          <div className="hidden sm:block text-[11px]">@TOOGOODFORMERCH</div>
         </div>
       </div>
     </main>
