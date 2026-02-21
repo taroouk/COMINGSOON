@@ -9,8 +9,8 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    <main className="bg-white min-h-[100svh]">
-      {/* FULL-PAGE WRAP (NO GREY SPACE, NO CENTERED BOX) */}
+    <main className="bg-white min-h-[100svh] overflow-x-hidden">
+      {/* FULL-PAGE WRAP (NO GREY SPACE) */}
       <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
@@ -24,9 +24,10 @@ export default function Home() {
               <div className="w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] border-t-2 border-r-2 border-black rotate-45" />
             </div>
 
+            {/* FIX: force single line on mobile */}
             <div
-              className="text-center font-bold text-black leading-none text-[16px] sm:text-[20px]"
-              style={{ letterSpacing: "0.18em" }}
+              className="px-2 text-center font-bold text-black leading-none whitespace-nowrap text-[14px] sm:text-[20px]"
+              style={{ letterSpacing: "0.14em" }}
             >
               ORDER VIA WHATSAPP
             </div>
@@ -48,16 +49,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* SUBTITLE (2 LINES, BIGGER) */}
+          {/* SUBTITLE (EXACTLY 2 LINES ON MOBILE) */}
           <div
-            className="mt-[18px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[22px] sm:text-[28px]"
+            className="mt-[18px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[20px] sm:text-[28px]"
             style={{ letterSpacing: "0.02em" }}
           >
-            <div>MERCH, DONE PROPERLY</div>
-            <div>WEBSITE LAUNCHING SOON</div>
+            <div className="whitespace-nowrap">MERCH, DONE PROPERLY</div>
+            <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-          {/* LOGO (SMALLER + NO CROP) */}
+          {/* LOGO (NO CROP) */}
           <div className="mt-[14px] sm:mt-[18px] flex justify-center">
             <div className="w-[320px] sm:w-[520px] max-w-[92%]">
               <Image
@@ -71,13 +72,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* PUSH FOOTER TO THE VERY BOTTOM (NO EXTRA SPACE UNDER IT) */}
+          {/* FOOTER (ONE LINE + FULLY VISIBLE) */}
           <div className="mt-auto pt-[10px] sm:pt-[12px]">
             <div
-              className="w-full text-center font-bold text-black whitespace-nowrap leading-none"
+              className="w-full text-center font-bold text-black whitespace-nowrap leading-none px-1"
               style={{ letterSpacing: "0.01em" }}
             >
-              <span className="text-[9px] sm:text-[11px]">
+              <span className="text-[8px] sm:text-[11px]">
                 TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
               </span>
             </div>
