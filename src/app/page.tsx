@@ -55,8 +55,8 @@ export default function Home() {
         </div>
 
         {/* LOGO */}
-        {/* ✅ صغرناه أكتر للموبايل + حددنا max-height عشان ما يتقصش */}
-        <div className="mt-4 sm:mt-8 flex justify-center">
+        {/* ✅ نزّلناه سنة لتحت + لسه مصغّر ومش بيتقص */}
+        <div className="mt-5 sm:mt-8 flex justify-center">
           <div className="w-[240px] sm:w-[540px] max-w-[95%]">
             <Image
               src="/logos/logo.png"
@@ -70,17 +70,20 @@ export default function Home() {
         </div>
 
         {/* FOOTER */}
-        {/* ✅ جوه الصفحة 100% + padding يمين/شمال + خط أصغر + no overflow */}
+        {/* ✅ شيلنا truncate عشان السطر كله يبان + صغّرنا الخط */}
         <div
-          className="mt-auto pt-3 sm:mt-14 sm:pt-0 w-full flex justify-center sm:justify-between items-center font-bold text-black whitespace-nowrap overflow-hidden px-[6px] sm:px-0"
-          style={{ letterSpacing: "0.02em", fontSize: "8px" }}
+          className="mt-auto pt-3 sm:mt-14 sm:pt-0 w-full flex justify-center sm:justify-between items-center font-bold text-black whitespace-nowrap px-[10px] sm:px-0"
+          style={{ letterSpacing: "0.02em" }}
         >
-          {/* موبايل: سطر واحد مضبوط */}
-          <div className="sm:hidden text-center w-full truncate">
+          {/* Mobile: one full line, no truncation */}
+          <div
+            className="sm:hidden text-center w-full"
+            style={{ fontSize: "7px" }}
+          >
             TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
           </div>
 
-          {/* ديسكتوب: نفس القديم */}
+          {/* Desktop: نفس القديم */}
           <div className="hidden sm:block text-[11px]">
             TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED
           </div>
