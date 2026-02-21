@@ -1,10 +1,9 @@
-// src/app/layout.tsx
 import "./globals.css";
 import { Rubik } from "next/font/google";
 
 const rubik = Rubik({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["700"], // Bold
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
