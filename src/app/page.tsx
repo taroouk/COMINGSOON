@@ -10,6 +10,7 @@ const WHATSAPP_URL =
 export default function Home() {
   return (
     <main className="bg-white min-h-[100svh] overflow-x-hidden">
+      {/* FULL-PAGE WRAP (NO GREY SPACE) */}
       <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
@@ -23,6 +24,7 @@ export default function Home() {
               <div className="w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] border-t-2 border-r-2 border-black rotate-45" />
             </div>
 
+            {/* FIX: force single line on mobile */}
             <div
               className="px-2 text-center font-bold text-black leading-none whitespace-nowrap text-[14px] sm:text-[20px]"
               style={{ letterSpacing: "0.14em" }}
@@ -32,11 +34,11 @@ export default function Home() {
           </div>
         </a>
 
-        {/* CONTENT */}
+        {/* CONTENT AREA (STRETCHED VERTICALLY) */}
         <div className="flex-1 flex flex-col">
           {/* HERO */}
-          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[36svh] sm:aspect-[16/6] sm:h-auto">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden w-[68vw] h-[68vw] max-w-[340px] max-h-[340px] sm:w-[360px] sm:h-[360px]">
+          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden w-[72vw] h-[72vw] max-w-[360px] max-h-[360px] sm:w-[420px] sm:h-[420px]">
               <Image
                 src="/logos/hero.png"
                 alt="Hero"
@@ -47,7 +49,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* SUBTITLE (2 lines) */}
+          {/* SUBTITLE (EXACTLY 2 LINES ON MOBILE) */}
           <div
             className="mt-[18px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[20px] sm:text-[28px]"
             style={{ letterSpacing: "0.02em" }}
@@ -56,30 +58,29 @@ export default function Home() {
             <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-          {/* LOGO (move down slightly) */}
-          <div className="mt-[22px] sm:mt-[22px] flex justify-center">
-            <div className="w-[310px] sm:w-[520px] max-w-[92%]">
+          {/* LOGO (NO CROP) */}
+          <div className="mt-[14px] sm:mt-[18px] flex justify-center">
+            <div className="w-[320px] sm:w-[520px] max-w-[92%]">
               <Image
                 src="/logos/logo.png"
                 alt="TOO GOOD FOR MERCH"
                 width={2000}
                 height={1000}
                 priority
-                className="w-full h-auto object-contain max-h-[205px] sm:max-h-[260px]"
+                className="w-full h-auto object-contain max-h-[220px] sm:max-h-[260px]"
               />
             </div>
           </div>
 
-          {/* FOOTER (never overflows) */}
-          <div className="mt-auto pt-[10px] sm:pt-[12px] overflow-hidden">
+          {/* FOOTER (ONE LINE + FULLY VISIBLE) */}
+          <div className="mt-auto pt-[10px] sm:pt-[12px]">
             <div
-              className="w-full text-center font-bold text-black whitespace-nowrap overflow-hidden text-ellipsis px-2 leading-none"
-              style={{
-                letterSpacing: "0.01em",
-                fontSize: "clamp(7px, 2.4vw, 11px)",
-              }}
+              className="w-full text-center font-bold text-black whitespace-nowrap leading-none px-1"
+              style={{ letterSpacing: "0.01em" }}
             >
-              TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
+              <span className="text-[8px] sm:text-[11px]">
+                TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
+              </span>
             </div>
           </div>
         </div>
