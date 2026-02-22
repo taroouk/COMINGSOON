@@ -93,7 +93,7 @@ export default function Home() {
         <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
       </div>
 
-      <div className="text-center font-bold text-black text-[13px] sm:text-[16px] tracking-[0.12em]">
+      <div className="text-center font-bold text-black text-[13px] sm:text-[14px] tracking-[0.12em]">
         INSTAGRAM
       </div>
     </a>
@@ -108,7 +108,7 @@ export default function Home() {
         <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
       </div>
 
-      <div className="text-center font-bold text-black text-[13px] sm:text-[16px] tracking-[0.12em]">
+      <div className="text-center font-bold text-black text-[13px] sm:text-[14px] tracking-[0.12em]">
         TIKTOK
       </div>
     </a>
