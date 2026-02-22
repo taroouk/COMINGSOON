@@ -9,9 +9,9 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    <main className="bg-white min-h-[100svh] overflow-x-hidden sm:p-6">
+    <main className="bg-white min-h-[100svh] overflow-x-hidden">
       {/* FULL-PAGE WRAP (NO GREY SPACE) */}
-      <div className="w-full min-h-[100svh] sm:min-h-[calc(100svh-48px)] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col sm:max-w-[1280px] sm:mx-auto">
+      <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
           href={WHATSAPP_URL}
@@ -58,19 +58,19 @@ export default function Home() {
             <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-          {/* LOGO (NO CROP) */}
-          <div className="mt-[14px] sm:mt-[18px] flex justify-center">
-            <div className="w-[320px] sm:w-[520px] max-w-[92%]">
-              <Image
-                src="/logos/logo.png"
-                alt="TOO GOOD FOR MERCH"
-                width={2000}
-                height={1000}
-                priority
-                className="w-full h-auto object-contain max-h-[220px] sm:max-h-[260px]"
-              />
-            </div>
-          </div>
+{/* LOGO (DESKTOP FIXED - smaller, no crop) */}
+<div className="mt-[14px] sm:mt-[18px] flex justify-center">
+  <div className="w-[320px] sm:w-[460px] max-w-[90%]">
+    <Image
+      src="/logos/logo.png"
+      alt="TOO GOOD FOR MERCH"
+      width={2000}
+      height={1000}
+      priority
+      className="w-full h-auto object-contain max-h-[220px] sm:max-h-[220px]"
+    />
+  </div>
+</div>
 
           {/* FOOTER (ONE LINE + FULLY VISIBLE) */}
           <div className="mt-auto pt-[10px] sm:pt-[12px]">
