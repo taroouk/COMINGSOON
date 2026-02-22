@@ -9,9 +9,9 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    <main className="bg-white overflow-x-hidden">
-      {/* FULL-PAGE WRAP (NO GREY SPACE) */}
-      <div className="w-full border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
+    <main className="bg-white min-h-[100svh] overflow-x-hidden">
+      {/* FULL-PAGE WRAP (SMART STRETCH) */}
+      <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
         {/* TOP BAR */}
         <a
           href={WHATSAPP_URL}
@@ -24,7 +24,6 @@ export default function Home() {
               <div className="w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] border-t-2 border-r-2 border-black rotate-45" />
             </div>
 
-            {/* FIX: force single line on mobile */}
             <div
               className="px-2 text-center font-bold text-black leading-none whitespace-nowrap text-[14px] sm:text-[20px]"
               style={{ letterSpacing: "0.14em" }}
@@ -34,7 +33,7 @@ export default function Home() {
           </div>
         </a>
 
-        {/* CONTENT AREA (STRETCHED VERTICALLY) */}
+        {/* CONTENT AREA */}
         <div className="flex-1 flex flex-col">
           {/* HERO */}
           <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
@@ -49,7 +48,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* SUBTITLE (EXACTLY 2 LINES ON MOBILE) */}
+          {/* SUBTITLE */}
           <div
             className="mt-[18px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[20px] sm:text-[28px]"
             style={{ letterSpacing: "0.02em" }}
@@ -58,22 +57,22 @@ export default function Home() {
             <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-{/* LOGO (DESKTOP FIXED - smaller, no crop) */}
-<div className="mt-[14px] sm:mt-[18px] flex justify-center">
-  <div className="w-[320px] sm:w-[460px] max-w-[90%]">
-    <Image
-      src="/logos/logo.png"
-      alt="TOO GOOD FOR MERCH"
-      width={2000}
-      height={1000}
-      priority
-      className="w-full h-auto object-contain max-h-[220px] sm:max-h-[220px]"
-    />
-  </div>
-</div>
+          {/* LOGO (DESKTOP FIXED - smaller, no crop) */}
+          <div className="mt-[14px] sm:mt-[18px] flex justify-center">
+            <div className="w-[320px] sm:w-[460px] max-w-[90%]">
+              <Image
+                src="/logos/logo.png"
+                alt="TOO GOOD FOR MERCH"
+                width={2000}
+                height={1000}
+                priority
+                className="w-full h-auto object-contain max-h-[220px] sm:max-h-[220px]"
+              />
+            </div>
+          </div>
 
-          {/* FOOTER (ONE LINE + FULLY VISIBLE) */}
-          <div className="mt-[24px] sm:mt-auto pt-[10px] sm:pt-[12px]">
+          {/* FOOTER (STAYS AT BOTTOM WHEN SCREEN IS TALL) */}
+          <div className="mt-auto pt-[10px] sm:pt-[12px]">
             <div
               className="w-full text-center font-bold text-black whitespace-nowrap leading-none px-1"
               style={{ letterSpacing: "0.01em" }}
