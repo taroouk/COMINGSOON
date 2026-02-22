@@ -73,7 +73,7 @@ export default function Home() {
 </div>
 
           {/* FOOTER (ONE LINE + FULLY VISIBLE) */}
-          <div className="mt-auto pt-[10px] sm:pt-[12px]">
+          <div className="mt-[24px] sm:mt-auto pt-[10px] sm:pt-[12px]">
             <div
               className="w-full text-center font-bold text-black whitespace-nowrap leading-none px-1"
               style={{ letterSpacing: "0.01em" }}
