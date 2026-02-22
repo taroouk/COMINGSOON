@@ -36,34 +36,34 @@ export default function Home() {
         {/* CONTENT AREA */}
         <div className="flex-1 flex flex-col">
 
-{/* HERO */}
-<div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[44svh] sm:h-[46svh]">
-  <div
-    className="
-      absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-      rounded-full overflow-hidden
-      w-[74vw] h-[74vw] max-w-[380px] max-h-[380px]
-      sm:w-[420px] sm:h-[420px]
-    "
-  >
-    <Image
-      src="/logos/hero.png"
-      alt="Hero"
-      fill
-      priority
-      className="object-cover"
-    />
-  </div>
-</div>
+          {/* HERO */}
+          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[44svh] sm:h-[46svh]">
+            <div
+              className="
+                absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                rounded-full overflow-hidden
+                w-[74vw] h-[74vw] max-w-[380px] max-h-[380px]
+                sm:w-[420px] sm:h-[420px]
+              "
+            >
+              <Image
+                src="/logos/hero.png"
+                alt="Hero"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+          </div>
 
-{/* SUBTITLE */}
-<div
-  className="mt-[26px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[20px] sm:text-[28px]"
-  style={{ letterSpacing: "0.02em" }}
->
-  <div className="whitespace-nowrap">MERCH, DONE PROPERLY</div>
-  <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
-</div>
+          {/* SUBTITLE */}
+          <div
+            className="mt-[26px] sm:mt-[22px] text-center font-bold text-black leading-[1.05] text-[20px] sm:text-[28px]"
+            style={{ letterSpacing: "0.02em" }}
+          >
+            <div className="whitespace-nowrap">MERCH, DONE PROPERLY</div>
+            <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
+          </div>
 
           {/* LOGO */}
           <div className="mt-[14px] sm:mt-[18px] flex justify-center">
@@ -77,6 +77,27 @@ export default function Home() {
                 className="w-full h-auto object-contain max-h-[220px] sm:max-h-[220px]"
               />
             </div>
+          </div>
+
+          {/* SOCIAL BOXES */}
+          <div className="mt-[18px] grid grid-cols-2 gap-[12px]">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#bdbdbd] h-[56px] sm:h-[64px] flex items-center justify-center font-bold text-[14px] sm:text-[18px] tracking-[0.12em]"
+            >
+              INSTAGRAM
+            </a>
+
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#bdbdbd] h-[56px] sm:h-[64px] flex items-center justify-center font-bold text-[14px] sm:text-[18px] tracking-[0.12em]"
+            >
+              TIKTOK
+            </a>
           </div>
 
           {/* FOOTER */}
