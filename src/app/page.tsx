@@ -36,17 +36,19 @@ export default function Home() {
         {/* CONTENT AREA */}
         <div className="flex-1 flex flex-col">
           {/* HERO */}
-          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden w-[72vw] h-[72vw] max-w-[360px] max-h-[360px] sm:w-[420px] sm:h-[420px]">
-              <Image
-                src="/logos/hero.png"
-                alt="Hero"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
+          {/* HERO */}
+<div className="mt-[14px] sm:mt-[24px] w-full bg-black flex items-center justify-center h-[260px] sm:h-[380px]">
+  <div className="rounded-full overflow-hidden w-[220px] h-[220px] sm:w-[340px] sm:h-[340px]">
+    <Image
+      src="/logos/hero.png"
+      alt="Hero"
+      width={600}
+      height={600}
+      priority
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
 
           {/* SUBTITLE */}
           <div
