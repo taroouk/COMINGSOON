@@ -42,7 +42,7 @@ export default function Home() {
     className="
       absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
       rounded-full overflow-hidden
-      w-[150vw] h-[150vw] max-w-[150px] max-h-[150px]
+      w-[150vw] h-[150vw] max-w-[380px] max-h-[380px]
       sm:w-[420px] sm:h-[420px]
     "
   >
