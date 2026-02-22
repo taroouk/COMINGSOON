@@ -80,8 +80,9 @@ export default function Home() {
           </div>
 
           {/* SOCIAL BOXES */}
-<div className="mt-[18px] w-full">
-  <div className="grid grid-cols-2 gap-[12px] w-full">
+<div className="mt-[18px] flex justify-center">
+  <div className="w-full sm:w-[400px] grid grid-cols-2 gap-[12px]">
+
     {/* Instagram */}
     <a
       href="https://instagram.com"
@@ -113,6 +114,7 @@ export default function Home() {
         TIKTOK
       </div>
     </a>
+
   </div>
 </div>
 
