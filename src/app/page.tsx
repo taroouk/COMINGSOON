@@ -51,7 +51,7 @@ export default function Home() {
       alt="Hero"
       fill
       priority
-      className="object-contain sm:object-cover"
+      className="object-cover"
     />
   </div>
 </div>
