@@ -36,20 +36,23 @@ export default function Home() {
         {/* CONTENT AREA */}
         <div className="flex-1 flex flex-col">
           {/* HERO */}
-          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden
-                            w-[68vw] h-[68vw] max-w-[340px] max-h-[340px]
-                            sm:w-[420px] sm:h-[420px]">
-              <Image
-                src="/logos/hero.png"
-                alt="Hero"
-                fill
-                // ✅ Mobile: contain (no crop) | Desktop: cover (زي ما كان)
-                className="object-contain sm:object-cover"
-                priority
-              />
-            </div>
-          </div>
+          {/* HERO */}
+<div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
+  <div
+    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+               rounded-full overflow-hidden
+               w-[72vw] h-[72vw] max-w-[360px] max-h-[360px]
+               sm:w-[420px] sm:h-[420px]"
+  >
+    <Image
+      src="/logos/hero.png"
+      alt="Hero"
+      fill
+      className="object-contain sm:object-cover"
+      priority
+    />
+  </div>
+</div>
 
           {/* SUBTITLE */}
           <div
