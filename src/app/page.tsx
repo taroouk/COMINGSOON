@@ -42,7 +42,7 @@ export default function Home() {
                 src="/logos/hero.png"
                 alt="Hero"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
@@ -59,7 +59,7 @@ export default function Home() {
 
           {/* LOGO (DESKTOP FIXED - smaller, no crop) */}
           <div className="mt-[14px] sm:mt-[18px] flex justify-center">
-            <div className="w-[320px] sm:w-[460px] max-w-[90%]">
+            <div className="w-[280px] sm:w-[460px] max-w-[90%]">
               <Image
                 src="/logos/logo.png"
                 alt="TOO GOOD FOR MERCH"
