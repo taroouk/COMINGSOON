@@ -80,25 +80,41 @@ export default function Home() {
           </div>
 
           {/* SOCIAL BOXES */}
-          <div className="mt-[18px] grid grid-cols-2 gap-[12px]">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-[#bdbdbd] h-[56px] sm:h-[64px] flex items-center justify-center font-bold text-[14px] sm:text-[18px] tracking-[0.12em]"
-            >
-              INSTAGRAM
-            </a>
+<div className="mt-[18px] flex justify-center">
+  <div className="w-[280px] sm:w-[400px] max-w-[90%] grid grid-cols-2 gap-[12px]">
 
-            <a
-              href="https://tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-[#bdbdbd] h-[56px] sm:h-[64px] flex items-center justify-center font-bold text-[14px] sm:text-[18px] tracking-[0.12em]"
-            >
-              TIKTOK
-            </a>
-          </div>
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#bdbdbd] h-[56px] sm:h-[64px] grid grid-cols-[56px_1fr] sm:grid-cols-[64px_1fr] items-center"
+    >
+      <div className="h-full border-r border-[#bdbdbd] flex items-center justify-center">
+        <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
+      </div>
+
+      <div className="text-center font-bold text-black text-[13px] sm:text-[16px] tracking-[0.12em]">
+        INSTAGRAM
+      </div>
+    </a>
+
+    <a
+      href="https://tiktok.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#bdbdbd] h-[56px] sm:h-[64px] grid grid-cols-[56px_1fr] sm:grid-cols-[64px_1fr] items-center"
+    >
+      <div className="h-full border-r border-[#bdbdbd] flex items-center justify-center">
+        <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
+      </div>
+
+      <div className="text-center font-bold text-black text-[13px] sm:text-[16px] tracking-[0.12em]">
+        TIKTOK
+      </div>
+    </a>
+
+  </div>
+</div>
 
           {/* FOOTER */}
           <div className="mt-auto pt-[10px] sm:pt-[12px]">
