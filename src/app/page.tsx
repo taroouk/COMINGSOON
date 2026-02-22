@@ -9,9 +9,9 @@ const WHATSAPP_URL =
 
 export default function Home() {
   return (
-    <main className="bg-white min-h-[100svh] overflow-x-hidden">
+    <main className="bg-white min-h-[100svh] overflow-x-hidden sm:p-6">
       {/* FULL-PAGE WRAP (NO GREY SPACE) */}
-      <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
+      <div className="w-full min-h-[100svh] sm:min-h-[calc(100svh-48px)] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col sm:max-w-[1280px] sm:mx-auto">
         {/* TOP BAR */}
         <a
           href={WHATSAPP_URL}
