@@ -57,19 +57,18 @@ export default function Home() {
             <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-          {/* LOGO (DESKTOP FIXED - smaller, no crop) */}
-          <div className="mt-[14px] sm:mt-[18px] flex justify-center">
-            <div className="w-[320px] sm:w-[460px] max-w-[90%]">
-              <Image
-                src="/logos/logo.png"
-                alt="TOO GOOD FOR MERCH"
-                width={2000}
-                height={1000}
-                priority
-                className="w-full h-auto object-contain max-h-[220px] sm:max-h-[220px]"
-              />
-            </div>
-          </div>
+          <div className="mt-[14px] sm:mt-[24px] flex justify-center">
+  <div className="w-[340px] sm:w-[640px] max-w-[92%]">
+    <Image
+      src="/logos/logo.png"
+      alt="TOO GOOD FOR MERCH"
+      width={2000}
+      height={1000}
+      priority
+      className="w-full h-auto object-contain max-h-[240px] sm:max-h-[360px]"
+    />
+  </div>
+</div>
 
           {/* FOOTER (STAYS AT BOTTOM WHEN SCREEN IS TALL) */}
           <div className="mt-auto pt-[10px] sm:pt-[12px]">
