@@ -80,9 +80,9 @@ export default function Home() {
           </div>
 
           {/* SOCIAL BOXES */}
-<div className="mt-[18px] flex justify-center">
-  <div className="w-[280px] sm:w-[400px] max-w-[90%] grid grid-cols-2 gap-[12px]">
-
+<div className="mt-[18px] w-full">
+  <div className="grid grid-cols-2 gap-[12px] w-full">
+    {/* Instagram */}
     <a
       href="https://instagram.com"
       target="_blank"
@@ -93,11 +93,12 @@ export default function Home() {
         <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
       </div>
 
-      <div className="text-center font-bold text-black text-[13px] sm:text-[14px] tracking-[0.12em]">
+      <div className="text-center font-bold text-black text-[12px] sm:text-[16px] tracking-[0.12em] whitespace-nowrap">
         INSTAGRAM
       </div>
     </a>
 
+    {/* TikTok */}
     <a
       href="https://tiktok.com"
       target="_blank"
@@ -108,11 +109,10 @@ export default function Home() {
         <div className="w-[14px] h-[14px] sm:w-[16px] sm:h-[16px] border-t-2 border-r-2 border-black rotate-45" />
       </div>
 
-      <div className="text-center font-bold text-black text-[13px] sm:text-[14px] tracking-[0.12em]">
+      <div className="text-center font-bold text-black text-[12px] sm:text-[16px] tracking-[0.12em] whitespace-nowrap">
         TIKTOK
       </div>
     </a>
-
   </div>
 </div>
 
