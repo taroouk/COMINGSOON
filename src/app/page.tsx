@@ -10,8 +10,8 @@ const WHATSAPP_URL =
 export default function Home() {
   return (
     <main className="bg-white min-h-[100svh] overflow-x-hidden">
-      {/* FULL-PAGE WRAP (SMART STRETCH) */}
       <div className="w-full min-h-[100svh] border border-[#bdbdbd] p-[12px] sm:p-[16px] flex flex-col">
+
         {/* TOP BAR */}
         <a
           href={WHATSAPP_URL}
@@ -35,22 +35,24 @@ export default function Home() {
 
         {/* CONTENT AREA */}
         <div className="flex-1 flex flex-col">
-        <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
-  <div
-    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-               rounded-full overflow-hidden
-               w-[78vw] h-[78vw] max-w-[380px] max-h-[380px]
-               sm:w-[420px] sm:h-[420px]"
-  >
-    <Image
-      src="/logos/hero.png"
-      alt="Hero"
-      fill
-      className="object-cover"
-      priority
-    />
-  </div>
-</div>
+
+          {/* HERO */}
+          <div className="mt-[14px] sm:mt-[24px] relative w-full bg-black overflow-hidden h-[38svh] sm:h-[46svh]">
+            <div
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                         rounded-full overflow-hidden
+                         w-[78vw] h-[78vw] max-w-[380px] max-h-[380px]
+                         sm:w-[420px] sm:h-[420px]"
+            >
+              <Image
+                src="/logos/hero.png"
+                alt="Hero"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
 
           {/* SUBTITLE */}
           <div
@@ -61,7 +63,7 @@ export default function Home() {
             <div className="whitespace-nowrap">WEBSITE LAUNCHING SOON</div>
           </div>
 
-          {/* LOGO (DESKTOP FIXED - smaller, no crop) */}
+          {/* LOGO */}
           <div className="mt-[14px] sm:mt-[18px] flex justify-center">
             <div className="w-[280px] sm:w-[400px] max-w-[90%]">
               <Image
@@ -75,7 +77,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FOOTER (STAYS AT BOTTOM WHEN SCREEN IS TALL) */}
+          {/* FOOTER */}
           <div className="mt-auto pt-[10px] sm:pt-[12px]">
             <div
               className="w-full text-center font-bold text-black whitespace-nowrap leading-none px-1"
@@ -86,6 +88,7 @@ export default function Home() {
               </span>
             </div>
           </div>
+
         </div>
       </div>
     </main>
