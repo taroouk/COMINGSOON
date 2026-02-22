@@ -38,7 +38,7 @@ export default function Home() {
           {/* HERO */}
           {/* HERO */}
 <div className="mt-[14px] sm:mt-[24px] w-full bg-black flex items-center justify-center h-[260px] sm:h-[380px]">
-  <div className="rounded-full overflow-hidden w-[220px] h-[220px] sm:w-[340px] sm:h-[340px]">
+  <div className="rounded-full overflow-hidden w-[220px] h-[220px] sm:w-[380px] sm:h-[380px]">
     <Image
       src="/logos/hero.png"
       alt="Hero"
