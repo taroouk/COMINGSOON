@@ -125,7 +125,7 @@ export default function Home() {
               style={{ letterSpacing: "0.01em" }}
             >
               <span className="text-[8px] sm:text-[11px]">
-                TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED @TOOGOODFORMERCH
+                TOOGOODFORMERCH© 2026 ALL RIGHTS RESERVED
               </span>
             </div>
           </div>
