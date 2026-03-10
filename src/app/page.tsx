@@ -85,7 +85,7 @@ export default function Home() {
 
     {/* Instagram */}
     <a
-      href="https://instagram.com"
+      href="https://www.instagram.com/toogoodformerch"
       target="_blank"
       rel="noopener noreferrer"
       className="border border-[#bdbdbd] h-[56px] sm:h-[64px] grid grid-cols-[56px_1fr] sm:grid-cols-[64px_1fr] items-center"
@@ -101,7 +101,7 @@ export default function Home() {
 
     {/* TikTok */}
     <a
-      href="https://tiktok.com"
+      href="www.tiktok.com/@toogoodformerch"
       target="_blank"
       rel="noopener noreferrer"
       className="border border-[#bdbdbd] h-[56px] sm:h-[64px] grid grid-cols-[56px_1fr] sm:grid-cols-[64px_1fr] items-center"
